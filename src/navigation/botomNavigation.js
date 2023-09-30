@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreens from "../screens/HomeScreens";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,6 +17,9 @@ function MyTabs() {
           if (route.name == "Home") {
             iconName = focused ? "home" : "home-outline";
           }
+          if (route.name == "Profile") {
+            iconName = focused ? "person" : "person-outline";
+          }
           return (
             <Ionicons name={iconName} size={size} color={color}></Ionicons>
           );
@@ -23,6 +27,7 @@ function MyTabs() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreens} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
 }
