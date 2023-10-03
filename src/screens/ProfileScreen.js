@@ -7,9 +7,10 @@ const ProfileScreen = () => {
     <SafeAreaView>
       <View>
         <Text>ProfileScreen</Text>
-      </View>
-      <StatusBar style="auto" />
+      </View>   
+      
     </SafeAreaView>
+    
   );
 };
 
