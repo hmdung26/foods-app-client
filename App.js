@@ -2,11 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Nav from './src/navigation/stackNavigation';
 import bottomNav from './src/navigation/botomNavigation';
+import HomeScreens from './src/screens/HomeScreens';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function App() {
   return (
-   <Nav></Nav>
+    <Nav></Nav>
   );
 }
 
