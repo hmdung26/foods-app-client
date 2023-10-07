@@ -5,7 +5,6 @@ import { StatusBar } from 'expo-status-bar'
 export default function HomeScreens() {
   return (
     <View style={styles.container}>
-        
       <Text>HomeScreens</Text>
     </View>
   )
