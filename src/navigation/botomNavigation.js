@@ -11,26 +11,6 @@ const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
-    // <Tab.Navigator
-    //   screenOptions={({ route }) => ({
-    //     headerShown: false,
-    //     tabBarIcon: ({ focused, size, color }) => {
-    //       let iconName;
-    //       if (route.name == "Home") {
-    //         iconName = focused ? "home" : "home-outline";
-    //       }
-    //       if (route.name == "Profile") {
-    //         iconName = focused ? "person" : "person-outline";
-    //       }
-    //       return (
-    //         <Ionicons name={iconName} size={size} color={color}></Ionicons>
-    //       );
-    //     },
-    //   })}
-    // >
-    //   <Tab.Screen name="Home" component={HomeScreens} />
-    //   <Tab.Screen name="Profile" component={ProfileScreen} />
-    // </Tab.Navigator>
     <HomeBottomTab />
   );
 }
@@ -71,15 +51,14 @@ const HomeBottomTab = () => {
         },
         tabBarActiveTintColor: 'white',
         tabBarStyle:{
-          paddingBottom:30,
+          paddingBottom:10,
           paddingTop:10,
           backgroundColor:'#FF045F',
-          fontSize:20,
-          height:100,
+          height:70,
         },
       })}
   >
-    <Tab.Screen name="Home" component={HomeScreens} />
+    <Tab.Screen name="Home" component={HomeScreens}/>
     <Tab.Screen name="Orders" component={Orders} />
     <Tab.Screen name="Chat" component={Chat} />
     <Tab.Screen name="Cart" component={Cart} />
