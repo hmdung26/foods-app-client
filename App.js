@@ -7,11 +7,10 @@ import HomeScreens from './src/screens/HomeScreens';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
+
 export default function App() {
   return (
     <Nav></Nav>
-  //  <Nav></Nav>
-   <MyInformationComponent/>
   );
 }
 

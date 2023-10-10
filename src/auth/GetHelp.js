@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function FogotPass() {
+export default function GetHelp() {
   return (
     <View>
-      <Text>FogotPass</Text>
+      <Text>GetHelp</Text>
     </View>
   )
 }

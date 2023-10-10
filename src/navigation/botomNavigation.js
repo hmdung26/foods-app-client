@@ -2,26 +2,20 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreens from "../screens/HomeScreens";
+
+import FlashSceen from "../screens/FlashSceen";
+
 import ProfileScreen from "../screens/ProfileScreen";
 import Cart from "../screens/Cart";
 import Chat from "../screens/Chat";
 import Orders from "../screens/Orders";
 
+
 const Tab = createBottomTabNavigator();
 
-function MyTabs() {
-  return (
-    <HomeBottomTab />
-  );
-}
 
-const bottomNav = () => {
-  return (
-    <NavigationContainer independent={true}>
-      <MyTabs></MyTabs>
-    </NavigationContainer>
-  );
-};
+
+
 
 const HomeBottomTab = () => {
   return (
@@ -67,4 +61,4 @@ const HomeBottomTab = () => {
   );
 }
 
-export default MyTabs;
+export default HomeBottomTab;
