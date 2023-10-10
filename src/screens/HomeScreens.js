@@ -8,8 +8,12 @@ import HomeComponent from '../component/homecomponent/HomeComponent'
 export default function HomeScreens() {
   return (
     <SafeAreaView>
+       <View style={styles.container}>
+      <Text>HomeScreens</Text>
+    </View>
     </SafeAreaView>
 
+   
   )
 }
 
