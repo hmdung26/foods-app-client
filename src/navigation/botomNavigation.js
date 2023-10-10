@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreens from "../screens/HomeScreens";
+import FlashSceen from "../screens/FlashSceen";
 
 const Tab = createBottomTabNavigator();
 
@@ -23,6 +24,8 @@ function MyTabs() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreens} />
+      
+
     </Tab.Navigator>
   );
 }
