@@ -1,22 +1,24 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { StatusBar } from 'expo-status-bar'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import Nav from '../navigation/stackNavigation'
+import HomeComponent from '../component/homecomponent/HomeComponent'
+
 
 export default function HomeScreens() {
   return (
-    <View style={styles.container}>
-        
-      <Text>HomeScreens</Text>
-    </View>
+    <SafeAreaView>
+    </SafeAreaView>
+
   )
 }
 
 const styles = StyleSheet.create({
 
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 })
